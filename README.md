@@ -3,8 +3,10 @@
 The ultimate guide to establishing a VPN tunnel with Nebula Overlay Network
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+[![Lines](https://img.shields.io/tokei/lines/github/yqlbu/nebula-proxy)](https://img.shields.io/tokei/lines/github/yqlbu/nebula-proxy)
 ![](<https://img.shields.io/static/v1?label=Architecture&message=x86,arm64&color=orange>)
 ![](https://img.shields.io/static/v1?label=Software&message=Nebula&color=violet)
+[![Last Commit](https://img.shields.io/github/last-commit/yqlbu/nebula-proxy)](https://img.shields.io/github/last-commit/yqlbu/nebula-proxy)
 
 *** Copy Right 2020 Kevin Yu. All rights reserved.
 
