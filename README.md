@@ -19,6 +19,40 @@ This repo aims to give you clear instructions on how to install, config, and use
 
 ## Introduction
 
+## Auto-start
+
+1. Login into the server with root access
+
+```
+sudo -i
+```
+
+2. Create the following systemd unit file for the required service & change permissions per below:
+
+```
+$ touch /lib/systemd/system/nebula.service
+$ chmod 0664 /lib/systemd/system/nebula.service
+```
+3. Add the following content into the `systemd` unit file to define the service
+
+```
+[Unit]
+Description=nebula
+Wants=basic.target
+After=basic.target network.target
+Before=sshd.service
+
+[Service]
+SyslogIdentifier=nebula
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStart=/usr/bin/nebula -config /etc/nebula/config.yml
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+
 ## Diagram
 
 ## Docs
