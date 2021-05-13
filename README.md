@@ -56,6 +56,13 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
+4. Enable `nebula.service` to run at background when the machine boots up
+
+```bash
+$ systemctl start nebula
+$ systemctl enable nebula
+$ systemctl status nebula
+```
 
 ## Docs
 
