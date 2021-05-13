@@ -26,7 +26,7 @@ This repo aims to give you clear instructions on how to install, config, and use
 1. Login into the server with root access
 
 ```
-sudo -i
+$ sudo -i
 ```
 
 2. Create the following systemd unit file for the required service & change permissions per below:
