@@ -19,6 +19,8 @@ This repo aims to give you clear instructions on how to install, config, and use
 
 ## Introduction
 
+## Diagram
+
 ## Auto-start
 
 1. Login into the server with root access
@@ -52,8 +54,6 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
-
-## Diagram
 
 ## Docs
 
