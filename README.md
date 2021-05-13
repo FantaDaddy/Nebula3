@@ -23,10 +23,12 @@ This repo aims to give you clear instructions on how to install, config, and use
 
 ## Auto-start
 
-1. Login into the server with root access
+1. Login into the server with root access and copy the binary to `/usr/bin`
 
 ```
 $ sudo -i
+$ cp nebula /usr/bin/nebula
+$ cp nebula-cert /usr/bin/nebula-cert
 ```
 
 2. Create the following systemd unit file for the required service & change permissions per below:
